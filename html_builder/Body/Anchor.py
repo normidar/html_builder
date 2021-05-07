@@ -9,9 +9,7 @@ class Anchor(html_builder.ExistElement):
                 if url[:7] != 'http://':
                     url = 'https://' + url
         self.__href = url
-        self.__attrs = {
-            'href': self.__href
-        }
+        self.__attrs = {}
 
     @classmethod
     def linkToId(cls, id: str):
@@ -19,6 +17,7 @@ class Anchor(html_builder.ExistElement):
         cls.__href = f'#{id}'
 
     def _getAttrs(self):
+        self.__attrs['href'] = self.__href
         return self.__attrs
 
     def _getEleKey(self):
