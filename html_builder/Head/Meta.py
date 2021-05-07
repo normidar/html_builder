@@ -25,10 +25,15 @@ class MKeywords(Meta):
 
 
 class MDescription(Meta):
-    def __init__(self, content: str):
+    def __init__(self, description: str):
         # 放网站描述
-        self.__content = content
+        self.__description = description
 
+    def _getAttrs(self):
+        return {
+            'name':'description',
+            'content': self.__description
+        }
 
 class MAuthor(Meta):
     def __init__(self, name: str):
