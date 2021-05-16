@@ -2,8 +2,8 @@ from abc import ABCMeta
 
 from typing import List, Optional, Union
 
-from html_builder import Element
-from html_builder.Body.Text import Text
+from html_builder.html.Element import Element
+from html_builder.html.Body.Text import Text
 
 
 class ExistElement(Element, metaclass=ABCMeta):

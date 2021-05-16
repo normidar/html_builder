@@ -9,6 +9,8 @@ long_description = '''
 this is a package to create html with python language
 though it will be used by myself, also you can use it.
 '''
+# python setup.py sdist upload
+# twine upload dist/*
 
 
 def get_readme():
@@ -18,7 +20,7 @@ def get_readme():
 
 setup(
     name='html_builder',
-    version='0.0.5',
+    version='0.0.7',
     author='normidar',
     author_email='normidar7@gmail.com',
     url='https://www.normidar.com',

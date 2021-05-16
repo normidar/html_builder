@@ -1,4 +1,4 @@
-from html_builder import *
+from html_builder.html.ExistElement import ExistElement
 
 
 class Body(ExistElement):

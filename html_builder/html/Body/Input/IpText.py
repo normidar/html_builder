@@ -1,4 +1,4 @@
-from html_builder.Body.Input.Input import Input
+from html_builder.html.Body import Input
 
 
 class IpText(Input):

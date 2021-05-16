@@ -1,4 +1,4 @@
-from html_builder import Element
+from html_builder.html.Element import Element
 
 
 class Text(Element):
@@ -19,7 +19,5 @@ class Text(Element):
         text = text.replace('>', '&gt;')
         text = text.replace('"', '&quot;')
         text = text.replace("'", '&#39;')
-        text = text.replace(" ", '&nbsp;')
+        # text = text.replace(" ", '&nbsp;')
         return text
-
-

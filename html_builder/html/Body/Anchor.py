@@ -1,7 +1,7 @@
-import html_builder
+from html_builder.html.ExistElement import ExistElement
 
 
-class Anchor(html_builder.ExistElement):
+class Anchor(ExistElement):
     def __init__(self, url: str, to_url=False):
         super().__init__()
         if to_url:
@@ -26,11 +26,11 @@ class Anchor(html_builder.ExistElement):
     def nofollow(self,nofollow = True , sponsored = False, ugc = False):
         rel = []
         if nofollow:
-            rel.add('nofollow')
+            rel.append('nofollow')
         if sponsored:
-            rel.add('sponsored')
+            rel.append('sponsored')
         if ugc:
-            rel.add('ugc')
+            rel.append('ugc')
         rel = ' '.join(rel)
         self.__attrs['rel'] = rel
 

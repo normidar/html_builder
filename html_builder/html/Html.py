@@ -1,6 +1,6 @@
-from html_builder.ExistElement import ExistElement
-from html_builder.Head.Head import Head
-from html_builder.Body.Body import Body
+from html_builder.html.ExistElement import ExistElement
+from html_builder.html.Head import Head
+from html_builder.html.Body.Body import Body
 
 
 class Html(ExistElement):

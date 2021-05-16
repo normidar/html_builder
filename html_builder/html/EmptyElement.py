@@ -1,6 +1,6 @@
 from abc import ABC
 
-from html_builder import *
+from html_builder.html.Element import Element
 
 
 class EmptyElement(Element, ABC):

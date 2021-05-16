@@ -1,9 +1,5 @@
-from html_builder.Body.Heading import Heading
-from html_builder.Body.Anchor import Anchor
-from html_builder.Body.Image import Image
-from html_builder.Body.Text import Text
-from html_builder.Html import Html
-from bs4 import BeautifulSoup
+from html_builder.html import Html, Heading, Text, Anchor
+
 import sys
 
 
@@ -23,10 +19,10 @@ def test_2():
 
 def write(html):
     print(html)
-    soup = BeautifulSoup(str(html), 'html.parser')
-    html = soup.prettify()
+    # soup = BeautifulSoup(str(html), 'html.parser')
+    # html = soup.prettify()
     with open('index.html', 'w') as f:
-        f.write(html)
+        f.write(str(html))
     return html
 
 

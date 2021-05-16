@@ -1,4 +1,4 @@
-from html_builder import EmptyElement
+from html_builder.html.EmptyElement import EmptyElement
 
 
 class Meta(EmptyElement):

@@ -1,5 +1,5 @@
 
-from html_builder import ExistElement
+from html_builder.html.ExistElement import ExistElement
 
 
 class Heading(ExistElement):

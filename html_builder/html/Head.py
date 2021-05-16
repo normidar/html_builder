@@ -1,6 +1,6 @@
-from html_builder import ExistElement
-from html_builder.Head.Title import Title
-from html_builder.Head.Meta import MCharset
+from html_builder.html.ExistElement import ExistElement
+from html_builder.html.Title import Title
+from html_builder.html.Meta import MCharset
 
 
 class Head(ExistElement):
