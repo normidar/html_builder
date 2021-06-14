@@ -1,21 +1,29 @@
 
 
 class Color(Value):
+    # 4 * 4 = 16 colors
     BLACK = 'black'
     GRAY = 'gray'
     SILVER = 'silver'
     WHITE = 'white'
+
     BLUE = 'blue'
     # 濃いブルー
     NAVY = 'navy'
     # 湖藍
     TEAL = 'teal'
     GREEN = 'green'
+
     # 明るい緑
     LIME = 'lime'
+    AQUA = 'aqua'
     YELLOW = 'yellow'
-    PURPLE = 'purple'
     RED = 'red'
+
+    FUCHSIA = 'fuchsia'
+    OLIVE = 'olive'
+    PURPLE = 'purple'
+    MAROON = 'maroon'
 
     def __init__(self, value:str):
         self.value = value
@@ -31,4 +39,4 @@ class Color(Value):
         cls.value = '#' + rt
 
     def _get_str(self):
-        ...
+        return self.value
