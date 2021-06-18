@@ -1,11 +1,6 @@
 from abc import ABCMeta, abstractmethod
+from . import CssObj
 
-
-class Value(metaclass=ABCMeta):
+class Value(CssObj,metaclass=ABCMeta):
+    ...
     
-    @abstractmethod
-    def _get_str(self):
-        ...
-
-    def __str__(self):
-        return self._get_str()
