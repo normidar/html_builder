@@ -16,6 +16,11 @@ class Html(ExistElement):
 
     def __str__(self):
         return '<!DOCTYPE html>' + super().__str__()
+    
+    def set_style(self, styles:list):
+        stys_str = ''.join([str(x) for x in styles])
+        self.head.addElement(ele) # html style ele を入れる
+
 
 class SEOHtml(Html):
     def __init__(self,title: str,description: str):

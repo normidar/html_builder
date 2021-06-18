@@ -18,7 +18,7 @@ def test_2():
 
 
 def write(html):
-    print(html)
+    # print(html)
     # soup = BeautifulSoup(str(html), 'html.parser')
     # html = soup.prettify()
     with open('index.html', 'w') as f:
